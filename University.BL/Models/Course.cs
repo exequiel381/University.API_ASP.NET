@@ -13,9 +13,11 @@ namespace University.BL.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        public int CourseId { get; set; }
+        public int CourseID { get; set; }
         public string Title { get; set; }
-        public int Credit { get; set; }
+        public int Credits { get; set; }
+        [NotMapped]
+        public string Descripcion { get; set; }
         public virtual ICollection<Enrollment> Enrollments { get; set; }
     }
 }

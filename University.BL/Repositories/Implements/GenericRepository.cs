@@ -28,6 +28,7 @@ namespace University.BL.Repositories.Implements
 
         public async Task<IEnumerable<TEntity>> GetAll()
         {
+            var s = universityContext.Students.ToListAsync();
             return await universityContext.Set<TEntity>().ToListAsync();
         }
 

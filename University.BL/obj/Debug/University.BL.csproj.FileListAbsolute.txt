@@ -5,8 +5,11 @@ D:\Unidad Exe\Programacion\Codigos\Proyectos C#\University\University.BL\bin\Deb
 D:\Unidad Exe\Programacion\Codigos\Proyectos C#\University\University.BL\bin\Debug\EntityFramework.SqlServer.dll
 D:\Unidad Exe\Programacion\Codigos\Proyectos C#\University\University.BL\bin\Debug\EntityFramework.xml
 D:\Unidad Exe\Programacion\Codigos\Proyectos C#\University\University.BL\bin\Debug\EntityFramework.SqlServer.xml
-D:\Unidad Exe\Programacion\Codigos\Proyectos C#\University\University.BL\obj\Debug\University.BL.csproj.AssemblyReference.cache
 D:\Unidad Exe\Programacion\Codigos\Proyectos C#\University\University.BL\obj\Debug\University.BL.csproj.CoreCompileInputs.cache
-D:\Unidad Exe\Programacion\Codigos\Proyectos C#\University\University.BL\obj\Debug\University.BL.csproj.CopyComplete
 D:\Unidad Exe\Programacion\Codigos\Proyectos C#\University\University.BL\obj\Debug\University.BL.dll
 D:\Unidad Exe\Programacion\Codigos\Proyectos C#\University\University.BL\obj\Debug\University.BL.pdb
+D:\Unidad Exe\Programacion\Codigos\Proyectos C#\University\University.BL\bin\Debug\AutoMapper.dll
+D:\Unidad Exe\Programacion\Codigos\Proyectos C#\University\University.BL\bin\Debug\AutoMapper.xml
+D:\Unidad Exe\Programacion\Codigos\Proyectos C#\University\University.BL\obj\Debug\University.BL.csproj.AssemblyReference.cache
+D:\Unidad Exe\Programacion\Codigos\Proyectos C#\University\University.BL\obj\Debug\University.BL.Migrations.dsf.resources
+D:\Unidad Exe\Programacion\Codigos\Proyectos C#\University\University.BL\obj\Debug\University.BL.csproj.GenerateResource.cache

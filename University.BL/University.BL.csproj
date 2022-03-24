@@ -34,6 +34,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper, Version=10.0.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.10.0.0\lib\net461\AutoMapper.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -52,21 +55,40 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\UniversityContext.cs" />
+    <Compile Include="DTOs\CourseDTO.cs" />
+    <Compile Include="DTOs\EnrollmentDTO.cs" />
+    <Compile Include="DTOs\MapperConfig.cs" />
+    <Compile Include="DTOs\StudentDTO.cs" />
+    <Compile Include="Migrations\202203242245189_dsf.cs" />
+    <Compile Include="Migrations\202203242245189_dsf.designer.cs">
+      <DependentUpon>202203242245189_dsf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Course.cs" />
     <Compile Include="Models\Enrollment.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\ICourseRepository.cs" />
     <Compile Include="Repositories\IGenericRepository.cs" />
+    <Compile Include="Repositories\Implements\CourseRepository.cs" />
     <Compile Include="Repositories\Implements\GenericRepository.cs" />
+    <Compile Include="Repositories\Implements\StudentRepository.cs" />
+    <Compile Include="Repositories\IStudentRepository.cs" />
+    <Compile Include="Services\ICourseService.cs" />
     <Compile Include="Services\IGenericService.cs" />
+    <Compile Include="Services\Implements\CourseService.cs" />
     <Compile Include="Services\Implements\GenericService.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DTOs\" />
+    <Compile Include="Services\Implements\StudentService.cs" />
+    <Compile Include="Services\IStudentService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202203242245189_dsf.resx">
+      <DependentUpon>202203242245189_dsf.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

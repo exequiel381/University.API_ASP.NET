@@ -4,6 +4,7 @@ using University.BL.Repositories;
 
 namespace University.BL.Services.Implements
 {
+    //Esta capa de servicios es la intermediaria entre el controlador y los repositorios
     public class GenericService<TEntity> : IGenericService<TEntity> where TEntity : class
     {
         private IGenericRepository<TEntity> genericRepository;
