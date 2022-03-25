@@ -10,10 +10,10 @@ namespace University.BL.DTOs
     public class CourseDTO
     {
         
-        public int CourseId { get; set; }
+        public int CourseID { get; set; }
         [Required(ErrorMessage = "The Field Title is Required")] // Decoradores para validar los modelos
         [StringLength(50)]
         public string Title { get; set; }
-        public int Credit { get; set; }
+        public int Credits { get; set; }
     }
 }
