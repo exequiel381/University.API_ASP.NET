@@ -9,7 +9,7 @@ using University.BL.Models;
 namespace University.BL.Data
 {
     public class UniversityContext : DbContext
-    {
+    {   //User : USerUniversity pass : bgnyvxpg
         private static UniversityContext universityContext = null;
         public UniversityContext() : base("cadena")//or we passed the connection string , or we get the name in Web.Config which we can modify without do other deploy
         {
