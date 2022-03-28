@@ -27,6 +27,12 @@ namespace University.BL.Repositories.Implements
             await universityContext.SaveChangesAsync();
         }
 
+        public async Task DeleteRange(IEnumerable<TEntity> elements)
+        {
+            universityContext.Set<TEntity>().RemoveRange(elements);
+            await universityContext.SaveChangesAsync();
+        }
+
         public async Task<IEnumerable<TEntity>> GetAll()
         {
             return await universityContext.Set<TEntity>().ToListAsync();
